@@ -16,7 +16,7 @@ import { LightboxModal } from './components/LightboxModal';
 export function App() {
   const [config, setConfig] = useState(() => {
     try {
-      const saved = localStorage.getItem('anniversary_custom_config_v4');
+      const saved = localStorage.getItem('anniversary_custom_config_v5');
       if (saved) return JSON.parse(saved);
       return DEFAULT_CONFIG;
     } catch {
@@ -34,13 +34,14 @@ export function App() {
   const handleSaveConfig = (newConfig) => {
     setConfig(newConfig);
     try {
-      localStorage.setItem('anniversary_custom_config_v4', JSON.stringify(newConfig));
+      localStorage.setItem('anniversary_custom_config_v5', JSON.stringify(newConfig));
     } catch (err) {
       console.error('Failed to save configuration:', err);
     }
   };
 
   const handleResetConfig = () => {
+    localStorage.removeItem('anniversary_custom_config_v5');
     localStorage.removeItem('anniversary_custom_config_v4');
     localStorage.removeItem('anniversary_custom_config_v3');
     localStorage.removeItem('anniversary_custom_config_v2');

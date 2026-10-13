@@ -121,11 +121,11 @@ export const ScratchCard = ({ scratchConfig }) => {
         <div className="scratch-card-wrapper" ref={containerRef}>
           {/* Hidden Message Content */}
           <div className="scratch-hidden-content">
-            <div className="surprise-icon">🎁</div>
+            <div className="surprise-icon">🧖‍♀️</div>
             <div className="surprise-badge">SPECIAL ANNIVERSARY VOUCHER</div>
             <div className="surprise-message">
               {scratchConfig?.hiddenMessage ||
-                '✨ DINNER AT YOUR FAVORITE RESTAURANT & A WEEKEND GETAWAY TRIP! ✨'}
+                '✨ Special Spa Day When I Have The Money My Love 🧖‍♀️💖 ✨'}
             </div>
             <div className="surprise-note">
               {scratchConfig?.rewardNote ||

@@ -216,7 +216,7 @@ export const DEFAULT_CONFIG = {
   scratchCard: {
     title: "A 2-Year Anniversary Surprise For You 🎁",
     instructions: "Scratch the card below with your finger or mouse to reveal your special anniversary surprise!",
-    hiddenMessage: "✨ DINNER AT YOUR FAVORITE RESTAURANT & A SPECIAL 2-YEAR GETAWAY TRIP! ✨",
+    hiddenMessage: "✨ Special Spa Day When I Have The Money My Love 🧖‍♀️💖 ✨",
     rewardNote: "Redeemable anytime, no expiration date! (Love you forever ❤️)"
   }
 };
