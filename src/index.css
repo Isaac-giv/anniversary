@@ -491,6 +491,44 @@ body {
   background: linear-gradient(90deg, transparent, var(--rose-primary), var(--gold-primary), transparent);
 }
 
+.counter-tabs-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.counter-tab-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 182, 193, 0.2);
+  color: var(--text-muted);
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s ease;
+}
+
+.counter-tab-btn:hover {
+  background: rgba(255, 77, 109, 0.15);
+  border-color: var(--rose-primary);
+  color: #fff;
+}
+
+.counter-tab-btn.active {
+  background: linear-gradient(135deg, var(--rose-deep), var(--rose-primary));
+  border-color: var(--rose-primary);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+}
+
 .counter-header {
   display: flex;
   align-items: center;
@@ -512,6 +550,13 @@ body {
   grid-template-columns: repeat(6, 1fr);
   gap: 12px;
   margin-bottom: 24px;
+}
+
+.counter-grid.countdown-grid {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .counter-box {
@@ -1779,6 +1824,11 @@ body {
   .counter-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
+  }
+
+  .counter-grid.countdown-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .counter-card-container {
